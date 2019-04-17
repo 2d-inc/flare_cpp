@@ -1,0 +1,30 @@
+{
+	"folders": [
+		{
+			"path": "flare_skia"
+		},
+		{
+			"path": "flare"
+		},
+		{
+			"path": "flare_math"
+		},
+		{
+			"path": "test"
+		},
+		{
+			"path": "example"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cquery.cacheDirectory": "${workspaceFolder}/.vscode/cquery_cached_index/",
+		"files.exclude": {
+			"**/cquery_cached_index": true,
+			"**/*.d": true,
+			"**/*.o": true
+		}
+	}
+}
