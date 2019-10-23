@@ -49,6 +49,7 @@ project "example"
 	includedirs 
 	{
 		"../../dependencies/glfw/include",
+		"../../dependencies/skia",
 		"../../dependencies/skia/include/core",
 		"../../dependencies/skia/include/effects",
 		"../../dependencies/skia/include/gpu",
