@@ -34,12 +34,17 @@ export PATH=$PATH:~/Projects/genie/bin/darwin
 # Building
 If you are using VSCode and have opened the flare.code-workspace, you can simply hit F5 to build and debug. Alternatively, several tasks are available in each project to build and generate compile commands.
 
-If you wish to use the build system, read on.
+Easy way via command line:
 ```
-cd build
-genie --file=example.lua ninja
+cd example
+./build.sh
+```
+
+Using build system (you can adapt this to your own platform):
+```
+cd example/build
+genie ninja
 make
-make config=release
 ```
 
 # CQuery
