@@ -17,6 +17,7 @@ project "flare_skia"
 		"../include",
 		"../../flare_math/include",
 		"../../flare/include",
+		"../../dependencies/skia",
 		"../../dependencies/skia/include/core",
 		"../../dependencies/skia/include/effects",
 		"../../dependencies/skia/include/gpu",
