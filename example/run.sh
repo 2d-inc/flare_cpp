@@ -1,5 +1,5 @@
 cd build
-genie ninja
-make
+genie gmake
+make -j7
 cd ../
 build/debug/bin/example
