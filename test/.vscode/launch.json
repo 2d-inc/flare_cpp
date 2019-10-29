@@ -9,6 +9,7 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
+            
             "program": "${workspaceFolder}/../test/build/debug/bin/test",
             "args": [],
             "stopAtEntry": false,
