@@ -5,6 +5,7 @@
 #include "SkColorSpace.h"
 #include "SkSurface.h"
 #include "SkTypes.h"
+#include "flare/custom_property.hpp"
 #include "flare/actor_bone.hpp"
 #include "flare/actor_node_solo.hpp"
 #include "flare/animation/actor_animation.hpp"
@@ -140,6 +141,12 @@ int main()
 	printf("node's scale y %f\n", myNode->scaleY());
 	printf("node's rotation %f\n", myNode->rotation());
 	printf("node's opactiy %f\n", myNode->opacity());*/
+    
+
+    flare::ActorNode* cpNode = static_cast<flare::ActorNode*>(artboard->component("Scale Node_Special Property"));
+            
+    flare::CustomBooleanProperty* customProp = cpNode->getCustomBooleanProperty("huh_sound");
+   // printf(customProp->value() ? "t" : "f");
 
 	flare::ActorBone* bone = static_cast<flare::ActorBone*>(artboard->component("Bone"));
 	//printf("node's length %f\n", bone->length());
@@ -203,6 +210,7 @@ int main()
 		view[5] = viewY;
 		// ---
         std::vector<flare::ActorAnimationEvent> events;
+        
         double currLayerAnim = animationTime;
 
         animationTime += elapsed;
